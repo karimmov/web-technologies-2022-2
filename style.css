@@ -2,6 +2,11 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
 
 .paragraph {
@@ -49,10 +54,22 @@
     height: 50px;
     margin-top: 50px;
     border-radius: 14px;
-    border: 0px;
+    border: 0;
     background: linear-gradient(to right, #4876e6, #8e54e8);
 }
 
 .contacts-body {
     background: url("/src/assets/img/vivid-blurred-colorful-background.jpg") no-repeat center;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(to right, #4876e6, #8e54e8);
+}
+
+.header-item {
+    padding: 20px 30px;
+    border-radius: 60px;
+    border-right: white solid 2px;
+    box-shadow: 4px -1px 2px black;
 }
