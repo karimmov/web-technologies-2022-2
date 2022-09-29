@@ -1,0 +1,75 @@
+@import "/src/assets/styles/fonts.css";
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.title-h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.title-h2-contacts {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.title-h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.title-h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.entry-field {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.submit-button {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 180px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 14px;
+    border: 0;
+    background: linear-gradient(to right, #4876e6, #8e54e8);
+}
+
+.contacts-body {
+    background: url("/src/assets/img/vivid-blurred-colorful-background.jpg") no-repeat center;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(to right, #4876e6, #8e54e8);
+}
+
+.header-item {
+    padding: 20px 30px;
+    border-radius: 60px;
+    border-right: white solid 2px;
+    box-shadow: 4px -1px 2px black;
+}
