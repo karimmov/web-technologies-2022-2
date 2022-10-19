@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="main-page">
-        <div class="container">
+        <div class="header-container container">
             <header>
                 <div class="header__logo"></div>
                 <nav class="header__nav">
@@ -27,43 +27,49 @@
         <div class="container">
             <div class="main-page__info">
                 <h1>
-                    Development of mobile applications and web services of any complexity
+                    Development of <span>mobile applications</span> and <span>web services</span> of any complexity
                 </h1>
                 <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
-                <div class="main-page__contact">
-                    <h3>Leave your contacts and we will call you back
-                        within 30 minutes</h3>
-                    <form action="">
-                        <label>Phone number<input type="tel"></label>
-                        <label>Full name<input type="text"></label>
-                        <input type="submit">
-                    </form>
-                </div>
+            </div>
+            <div class="main-page__request">
+                <h3>Leave your contacts and we will call you back
+                    within 30 minutes</h3>
+                <form action="">
+                    <div class="input-wrapper">
+                        <div class="caption">Phone number</div>
+                        <input type="tel" class="input-field">
+                    </div>
+                    <div class="input-wrapper">
+                        <div class="caption">Full name</div>
+                        <input type="text" class="input-field">
+                    </div>
+                    <input type="submit" value="Get consultation" class="button">
+                </form>
             </div>
         </div>
     </div>
-    <div class="footer-container">
+    <div class="footer-container container">
         <footer>
             <div class="footer__logo"></div>
-            <div class="contact-details">
-                <div class="info">
-                    <div class="info-title">Contact nums</div>
+            <div class="footer__items-wrapper">
+                <div class="footer__info">
+                    <div class="info-title phone">Contact nums</div>
                     +7 (778) 395 90 26
                 </div>
-                <div class="info">
-                    <div class="info-title">Post</div>
+                <div class="footer__info">
+                    <div class="info-title mail">Post</div>
                     mail@mail.com
                 </div>
-                <div class="info">
-                    <div class="info-title">Address</div>
+                <div class="footer__info">
+                    <div class="info-title address">Address</div>
                     City city, street st. 90
                 </div>
-                <div class="info">
-                    <div class="info-title">Leave a request</div>
+                <div class="footer__info">
+                    <div class="info-title request">Leave a request</div>
                     Leave a request
                 </div>
             </div>
-            <div class="slogan">We work throughout world</div>
+            <div class="footer__slogan">We work throughout world</div>
         </footer>
     </div>
 </body>
