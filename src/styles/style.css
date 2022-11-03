@@ -105,8 +105,8 @@ h1 {
     color: #101828;
 }
 
-h1 span {
-    color: #306FF5;
+span {
+    color: #2D66EE;
 }
 
 .main-page__info p {
@@ -252,4 +252,126 @@ footer .info-title {
 .footer__slogan::before {
     content: url("../assets/svg/footer/map_logo.svg");
     margin-right: 12px;
+}
+
+.development .container {
+    padding: 80px 0 82px;
+    display: flex;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 144%;
+    letter-spacing: 0.326451px;
+    color: #101828;
+}
+
+.development p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #101828;
+    margin-top: 32px;
+}
+
+.development__wrapper .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    color: #101828;
+    margin-top: 34px;
+}
+
+.development__wrapper .technologies {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #344054;
+    margin-top: 16px;
+}
+
+.development__info {
+    width: 496px;
+}
+
+.development__service-list {
+    margin-left: 232px;
+}
+
+.development__service-list li {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    color: #1D2939;
+    margin-top: 24px;
+    list-style-type: none;
+}
+
+.development__service-list ul {
+    padding-left: 0;
+}
+
+.development__service-list li:first-child {
+    margin-top: 12px;
+}
+
+.development__service-list a {
+    position: relative;
+}
+
+.development__service-list a::after {
+    content: "";
+    width: 7px;
+    height: 12px;
+    background: url("../assets/svg/arrow.svg");
+    position: absolute;
+    right: -21px;
+    top: 7px;
+}
+
+.industries-page {
+    background: #F2F4F7;
+    padding: 80px 0;
+}
+
+.industries-page h2 {
+    width: 600px;
+}
+
+.industries-page__wrapper {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.industries-page__item {
+    width: 391px;
+    height: 44px;
+    display: flex;
+}
+
+.industries-page__item .logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    margin-right: 16px;
+    display: flex;
+    padding: 12px;
+}
+
+.industries-page__item .caption {
+    padding-top: 10px;
+}
+
+.industries-page__item img {
+    width: 100%;
 }
