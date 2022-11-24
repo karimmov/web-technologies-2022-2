@@ -193,17 +193,18 @@ footer {
     height: 30px;
     background-image: url("../assets/svg/logo-footer.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin: 0 auto;
 }
 
 .footer__items-wrapper {
     margin-top: 43px;
-    display: flex;
+    display: grid;
     margin-bottom: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .footer__info {
-    width: 294px;
     font-weight: 600;
     font-size: 17px;
     line-height: 22px;
@@ -218,6 +219,7 @@ footer .info-title {
     letter-spacing: -0.154px;
     color: #98A2B3;
     margin-bottom: 11px;
+    height: 24px;
 }
 
 .footer__info .phone::before {
@@ -296,10 +298,11 @@ h2 {
     letter-spacing: -0.408px;
     color: #344054;
     margin-top: 16px;
-    width: 494px;
 }
 
-
+.development__wrapper {
+    width: 494px;
+}
 
 .development__service-list li {
     font-weight: 400;
@@ -504,7 +507,7 @@ h2 {
     }
 
     .mobile-menu {
-        /*display: block;*/
+        display: block;
         position: fixed;
         z-index: 100;
         width: 100%;
@@ -521,7 +524,7 @@ h2 {
         align-items: center;
     }
 
-    .mobile-menu--close {
+    .mobile-menu__close {
         position: absolute;
         top: 54px;
         left: 585px;
@@ -595,6 +598,11 @@ h2 {
         left: -29px;
         bottom: 2px;
     }
+
+    .footer__info .text {
+        font-weight: 600;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -648,9 +656,9 @@ h2 {
 
     .main-page {
         padding-bottom: 33px;
-        background: none;
-        background: #F2F4F7;
-
+        background-image: url("../assets/img/background425px.png");
+        background-position: 100% 90%;
+        background-size: 60%;
     }
 
     .main-page__request {
@@ -673,5 +681,144 @@ h2 {
     .main-page__request .button {
         width: 155px;
         height: 40px;
+    }
+
+    .development .container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px 0 64px;
+    }
+
+    .development__wrapper {
+        width: 277px;
+    }
+
+    .development__wrapper .title {
+        margin-top: 32px;
+    }
+
+    .industries-page {
+        padding: 32px 0;
+    }
+
+    .industries-page__item {
+        width: 195px;
+    }
+
+    .industries-page__wrapper {
+        gap: 32px;
+    }
+
+    .footer__logo {
+        width: 182px;
+        height: 22px;
+    }
+
+    footer {
+        padding: 38px 33px 32px 36px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .footer__items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 80px;
+        row-gap: 34px;
+        margin: 55px 0;
+    }
+
+    .footer__info {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        width: auto;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        display: block;
+        z-index: 100;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #FFFFFF;
+    }
+
+    .mobile-menu .container {
+        position: relative;
+        padding: 98px 0 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-menu__close {
+        position: absolute;
+        top: 34px;
+        left: 362px;
+    }
+
+    .mobile-menu__logo {
+        width: 114px;
+        height: 18px;
+    }
+
+    .mobile-menu nav {
+        margin-top: 31px;
+    }
+
+    .mobile-menu__item {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 144%;
+        letter-spacing: 0.326451px;
+        color: #101828;
+        margin-top: 21px;
+        text-align: center;
+    }
+
+    .mobile-menu__contacts {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.154px;
+        color: #2D66EE;
+        margin-top: 55px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .mobile-menu__phone {
+        position: relative;
+    }
+
+    .mobile-menu__phone::before {
+        content: "";
+        width: 14px;
+        height: 20px;
+        position: absolute;
+        background-image: url("../assets/svg/phone.svg");
+        left: -23px;
+        bottom: 0px;
+    }
+
+    .mobile-menu__mail {
+        position: relative;
+    }
+
+
+    .mobile-menu__mail::before {
+        content: "";
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        background-image: url("../assets/svg/email.svg");
+        left: -29px;
+        bottom: 2px;
     }
 }
