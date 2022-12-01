@@ -8,6 +8,54 @@
   padding-top: 24px;
 }
 
+@keyframes left-column-animL {
+  from {
+    transform: translate(0px, 20%);
+  }
+  to {
+    transform: translate(0, -78%);
+  }
+}
+@keyframes right-column-animL {
+  from {
+    transform: translate(0px, -120%);
+  }
+  to {
+    transform: translate(0, -21%);
+  }
+}
+@keyframes left-column-animM {
+  from {
+    transform: translate(0, -30px);
+  }
+  to {
+    transform: translate(0, -996px);
+  }
+}
+@keyframes right-column-animM {
+  from {
+    transform: translate(0px, -1000px);
+  }
+  to {
+    transform: translate(0, -27px);
+  }
+}
+@keyframes left-column-animS {
+  from {
+    transform: translate(0, -30px);
+  }
+  to {
+    transform: translate(0, -930px);
+  }
+}
+@keyframes right-column-animS {
+  from {
+    transform: translate(0px, -1000px);
+  }
+  to {
+    transform: translate(0, -94px);
+  }
+}
 .header {
   display: flex;
   gap: 80px;
@@ -78,6 +126,7 @@ a {
 .container {
   max-width: 1224px;
   margin: 0 auto;
+  position: relative;
 }
 
 h1 {
@@ -95,9 +144,12 @@ span {
 .main-page {
   background-color: #F2F4F7;
   padding-bottom: 270px;
-  background-image: url("../assets/img/background.png");
+  /*background-image: url("../assets/img/background.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right;*/
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
 }
 .main-page__info {
   width: 600px;
@@ -166,6 +218,26 @@ span {
 }
 .main-page__request .input-wrapper {
   width: 224px;
+}
+.main-page__background {
+  position: absolute;
+  width: 624px;
+  height: 2000px;
+  display: flex;
+  gap: 30px;
+  transform: rotate(-15deg);
+  top: -750px;
+  right: -110px;
+  z-index: -10;
+}
+.main-page__background .left-column {
+  animation: left-column-animL 25s linear infinite;
+}
+.main-page__background .right-column {
+  animation: right-column-animL 25s linear infinite;
+}
+.main-page img {
+  margin-bottom: 20px;
 }
 
 footer {
@@ -258,6 +330,10 @@ h2 {
   line-height: 144%;
   letter-spacing: 0.326451px;
   color: #101828;
+}
+
+.development {
+  background: white;
 }
 
 .development p {
@@ -389,9 +465,6 @@ h2 {
   .header__contacts .header__phone {
     display: none;
   }
-  .header-container {
-    padding-top: 16px;
-  }
   .header__burger {
     display: block;
     width: 59px;
@@ -411,6 +484,9 @@ h2 {
   }
   .header__mail::before {
     bottom: 10px;
+  }
+  .header-container {
+    padding-top: 16px;
   }
   .main-page__info {
     width: 383px;
@@ -440,10 +516,25 @@ h2 {
     height: 40px;
   }
   .main-page {
-    background-image: url("../assets/img/background768px.png");
+    /*background-image: url("../assets/img/background768px.png");
     background-position: right;
-    background-size: contain;
+    background-size: contain;*/
     padding-bottom: 32px;
+    overflow: hidden;
+  }
+  .main-page__background {
+    transform: rotate(-12deg);
+    width: 294px;
+    height: 933px;
+    gap: 10px;
+    top: -171px;
+    right: -23px;
+  }
+  .main-page__background .left-column {
+    animation: left-column-animM 20s linear infinite;
+  }
+  .main-page__background .right-column {
+    animation: right-column-animM 20s linear infinite;
   }
   h2 {
     font-size: 28px;
@@ -594,9 +685,23 @@ h2 {
   }
   .main-page {
     padding-bottom: 33px;
-    background-image: url("../assets/img/background425px.png");
+    /*background-image: url("../assets/img/background425px.png");
     background-position: 100% 90%;
-    background-size: 60%;
+    background-size: 60%;*/
+  }
+  .main-page__background {
+    transform: rotate(-12deg);
+    width: 294px;
+    height: 847px;
+    top: 223px;
+    right: 32px;
+    overflow: hidden;
+  }
+  .main-page .left-column {
+    animation: left-column-animS 20s linear infinite;
+  }
+  .main-page .right-column {
+    animation: right-column-animS 20s linear infinite;
   }
   .main-page__request {
     width: 393px;
@@ -661,7 +766,7 @@ h2 {
   }
   .mobile-menu {
     position: fixed;
-    display: block;
+    display: none;
     z-index: 100;
     width: 100%;
     top: 0;
